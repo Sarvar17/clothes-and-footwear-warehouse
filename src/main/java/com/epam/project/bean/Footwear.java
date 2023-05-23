@@ -9,8 +9,6 @@ import java.util.Objects;
  */
 public class Footwear extends  Product {
     protected final String category;
-    protected int quantity;
-    protected int price;
 
     /**
      * Class constructor to set attributes about the footwear.
@@ -21,30 +19,12 @@ public class Footwear extends  Product {
      * @param price Price of the footwear.
      */
     public Footwear(String name, Long id, String category, int quantity, int price) {
-        super(name, id);
+        super(name, id, quantity, price);
         this.category = category;
-        this.quantity = quantity;
-        this.price = price;
     }
 
     public String getCategory() {
         return category;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 
     @Override
@@ -53,13 +33,12 @@ public class Footwear extends  Product {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Footwear footwear = (Footwear) o;
-        return quantity == footwear.quantity && price == footwear.price
-                && Objects.equals(category, footwear.category);
+        return Objects.equals(category, footwear.category);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), category, quantity, price);
+        return Objects.hash(super.hashCode(), category);
     }
 
     @Override
