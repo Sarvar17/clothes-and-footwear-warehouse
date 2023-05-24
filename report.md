@@ -9,3 +9,4 @@
 * Added service interface for Product
 * Extended ProductService with service interfaces ClothesService and ProductService
 * Implemented ClothesService and FootwearService
+* Added Purchasable interface to the Service package
