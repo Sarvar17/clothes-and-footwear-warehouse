@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class FootwearServiceImpl implements FootwearService {
 
-    private List<Footwear> footwears;
+    private List<Footwear> footwear;
     private final FootwearDao footwearDaoImpl;
 
     public FootwearServiceImpl(FootwearDao footwearDaoImpl) {
@@ -17,18 +17,18 @@ public class FootwearServiceImpl implements FootwearService {
     }
 
     private void setProducts() {
-        footwears = footwearDaoImpl.all();
+        footwear = footwearDaoImpl.all();
     }
 
     private void sortProducts() {
-        Collections.sort(footwears);
+        Collections.sort(footwear);
     }
 
     @Override
     public List<Footwear> getProductsById(Long id) {
         setProducts();
         sortProducts();
-        return footwears
+        return footwear
                 .stream()
                 .filter(e -> id.compareTo(e.getId()) == 0)
                 .collect(Collectors.toList());
@@ -38,7 +38,7 @@ public class FootwearServiceImpl implements FootwearService {
     public List<Footwear> getProductsByName(String name) {
         setProducts();
         sortProducts();
-        return footwears
+        return footwear
                 .stream()
                 .filter(e -> name.compareTo(e.getName()) == 0)
                 .collect(Collectors.toList());
@@ -49,6 +49,6 @@ public class FootwearServiceImpl implements FootwearService {
         setProducts();
         sortProducts();
 
-        return footwears;
+        return footwear;
     }
 }
