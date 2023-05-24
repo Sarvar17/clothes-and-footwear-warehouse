@@ -1,29 +1,29 @@
-package com.epam.project.bean;
+package edu.itpu.project.bean;
 
 import java.util.Objects;
 
 /**
- * Clothes class to store information about the product.
+ * Footwear class to store information about the product.
  *
  * @author Sarvar Ilyasov
  */
-public class Clothes extends Product implements Comparable<Clothes> {
+public class Footwear extends  Product implements Comparable<Footwear> {
     private final String category;
     private final String color;
-    private final String size;
+    private final int size;
 
     /**
-     * Class constructor to set attributes about the clothes.
-     * @param name Name of the clothes.
-     * @param id ID of the clothes.
-     * @param category Category of the clothes.
+     * Class constructor to set attributes about the footwear.
+     * @param name Name of the footwear.
+     * @param id ID of the footwear.
+     * @param category Category of the footwear.
      * @param color Color of the footwear.
      * @param size Size of the footwear.
-     * @param quantity Quantity of the clothes.
-     * @param price Price of the clothes.
+     * @param quantity Quantity of the footwear.
+     * @param price Price of the footwear.
      */
-    public Clothes(String name, Long id, String category, String color,
-                   String size, int quantity, int price) {
+    public Footwear(String name, Long id, String category,
+                    String color, int size, int quantity, int price) {
         super(name, id, quantity, price);
         this.category = category;
         this.color = color;
@@ -38,7 +38,7 @@ public class Clothes extends Product implements Comparable<Clothes> {
         return color;
     }
 
-    public String getSize() {
+    public int getSize() {
         return size;
     }
 
@@ -47,8 +47,8 @@ public class Clothes extends Product implements Comparable<Clothes> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
-        Clothes clothes = (Clothes) o;
-        return Objects.equals(category, clothes.category) && Objects.equals(color, clothes.color) && Objects.equals(size, clothes.size);
+        Footwear footwear = (Footwear) o;
+        return size == footwear.size && Objects.equals(category, footwear.category) && Objects.equals(color, footwear.color);
     }
 
     @Override
@@ -58,10 +58,10 @@ public class Clothes extends Product implements Comparable<Clothes> {
 
     @Override
     public String toString() {
-        return "Clothes{" +
+        return "Footwear{" +
                 "category='" + category + '\'' +
                 ", color='" + color + '\'' +
-                ", size='" + size + '\'' +
+                ", size=" + size +
                 ", name='" + name + '\'' +
                 ", id=" + id +
                 ", quantity=" + quantity +
@@ -70,7 +70,7 @@ public class Clothes extends Product implements Comparable<Clothes> {
     }
 
     @Override
-    public int compareTo(Clothes o) {
+    public int compareTo(Footwear o) {
         return this.getName().compareTo(o.getName());
     }
 }

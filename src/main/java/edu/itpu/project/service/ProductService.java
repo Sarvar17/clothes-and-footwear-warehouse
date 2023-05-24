@@ -1,4 +1,4 @@
-package com.epam.project.service;
+package edu.itpu.project.service;
 
 public interface ProductService {
 }

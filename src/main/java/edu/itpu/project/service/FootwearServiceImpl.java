@@ -1,7 +1,7 @@
-package com.epam.project.service;
+package edu.itpu.project.service;
 
-import com.epam.project.bean.Footwear;
-import com.epam.project.dao.FootwearDao;
+import edu.itpu.project.bean.Footwear;
+import edu.itpu.project.dao.FootwearDao;
 
 import java.util.Collections;
 import java.util.List;

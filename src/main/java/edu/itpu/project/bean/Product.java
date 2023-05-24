@@ -1,4 +1,4 @@
-package com.epam.project.bean;
+package edu.itpu.project.bean;
 
 import java.util.Objects;
 

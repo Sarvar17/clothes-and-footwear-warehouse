@@ -1,6 +1,6 @@
-package com.epam.project.service;
+package edu.itpu.project.service;
 
-import com.epam.project.bean.Footwear;
+import edu.itpu.project.bean.Footwear;
 
 public interface FootwearService extends ProductService, Nameable<Footwear>,
                                             Identifiable<Footwear>, Sortable<Footwear> {

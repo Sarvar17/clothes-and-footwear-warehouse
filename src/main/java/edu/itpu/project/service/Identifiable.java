@@ -1,6 +1,6 @@
-package com.epam.project.service;
+package edu.itpu.project.service;
 
-import com.epam.project.bean.Product;
+import edu.itpu.project.bean.Product;
 
 import java.util.List;
 

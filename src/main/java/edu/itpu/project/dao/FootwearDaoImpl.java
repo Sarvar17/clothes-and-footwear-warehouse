@@ -1,6 +1,6 @@
-package com.epam.project.dao;
+package edu.itpu.project.dao;
 
-import com.epam.project.bean.Footwear;
+import edu.itpu.project.bean.Footwear;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

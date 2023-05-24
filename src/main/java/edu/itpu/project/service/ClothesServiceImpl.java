@@ -1,7 +1,7 @@
-package com.epam.project.service;
+package edu.itpu.project.service;
 
-import com.epam.project.bean.Clothes;
-import com.epam.project.dao.ClothesDao;
+import edu.itpu.project.bean.Clothes;
+import edu.itpu.project.dao.ClothesDao;
 
 import java.util.Collections;
 import java.util.List;

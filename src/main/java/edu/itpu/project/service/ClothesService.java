@@ -1,6 +1,6 @@
-package com.epam.project.service;
+package edu.itpu.project.service;
 
-import com.epam.project.bean.Clothes;
+import edu.itpu.project.bean.Clothes;
 
 public interface ClothesService extends ProductService, Nameable<Clothes>,
                                         Identifiable<Clothes>, Sortable<Clothes> {

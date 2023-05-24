@@ -1,6 +1,7 @@
-package com.epam.project.dao;
+package edu.itpu.project.dao;
 
-import com.epam.project.bean.Product;
+import edu.itpu.project.bean.Product;
+
 import java.util.List;
 
 /**
