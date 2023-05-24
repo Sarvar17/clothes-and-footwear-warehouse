@@ -14,13 +14,13 @@ import java.util.stream.Collectors;
  * @author Sarvar Ilyasov
  */
 public class ClothesDaoImpl implements ClothesDao {
-    private final String FILE_PATH = "csv/sample-original.csv";
+    private final String FILE_PATH = "src/main/resources/clothes.csv";
 
     private List<Clothes> products;
     private final String COMMA_DELIMITER = ",";
 
     /**
-     * Reads the csv file, sorts the list and removes duplicates.
+     * Reads the csv file, sorts the list.
      */
     @Override
     public List<Clothes> all() {
