@@ -1,5 +1,6 @@
 package edu.itpu.project.service;
 
+import edu.itpu.project.bean.Clothes;
 import edu.itpu.project.bean.Footwear;
 import edu.itpu.project.dao.FootwearDao;
 
@@ -50,5 +51,15 @@ public class FootwearServiceImpl implements FootwearService {
         sortProducts();
 
         return footwear;
+    }
+
+    @Override
+    public List<Footwear> getPurchasableProducts(int price) {
+        setProducts();
+        sortProducts();
+        return footwear
+                .stream()
+                .filter(e -> e.getPrice() <= price)
+                .collect(Collectors.toList());
     }
 }

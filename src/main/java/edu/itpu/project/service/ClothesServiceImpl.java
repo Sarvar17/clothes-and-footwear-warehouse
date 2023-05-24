@@ -51,4 +51,14 @@ public class ClothesServiceImpl implements ClothesService {
 
         return clothes;
     }
+
+    @Override
+    public List<Clothes> getPurchasableProducts(int price) {
+        setProducts();
+        sortProducts();
+        return clothes
+                .stream()
+                .filter(e -> e.getPrice() <= price)
+                .collect(Collectors.toList());
+    }
 }
