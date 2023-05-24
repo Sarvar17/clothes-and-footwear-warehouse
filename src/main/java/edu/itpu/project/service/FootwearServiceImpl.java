@@ -1,6 +1,5 @@
 package edu.itpu.project.service;
 
-import edu.itpu.project.bean.Clothes;
 import edu.itpu.project.bean.Footwear;
 import edu.itpu.project.dao.FootwearDao;
 
@@ -41,7 +40,7 @@ public class FootwearServiceImpl implements FootwearService {
         sortProducts();
         return footwear
                 .stream()
-                .filter(e -> name.compareTo(e.getName()) == 0)
+                .filter(e -> name.equals(e.getName()))
                 .collect(Collectors.toList());
     }
 

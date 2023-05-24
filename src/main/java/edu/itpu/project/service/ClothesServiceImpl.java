@@ -40,7 +40,7 @@ public class ClothesServiceImpl implements ClothesService {
         sortProducts();
         return clothes
                 .stream()
-                .filter(e -> name.compareTo(e.getName()) == 0)
+                .filter(e -> name.equals(e.getName()))
                 .collect(Collectors.toList());
     }
 
