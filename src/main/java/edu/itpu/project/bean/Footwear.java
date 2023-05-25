@@ -59,11 +59,11 @@ public class Footwear extends  Product implements Comparable<Footwear> {
     @Override
     public String toString() {
         return "Footwear{" +
-                "category='" + category + '\'' +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", category='" + category + '\'' +
                 ", color='" + color + '\'' +
                 ", size=" + size +
-                ", name='" + name + '\'' +
-                ", id=" + id +
                 ", quantity=" + quantity +
                 ", price=" + price +
                 '}';

@@ -59,11 +59,11 @@ public class Clothes extends Product implements Comparable<Clothes> {
     @Override
     public String toString() {
         return "Clothes{" +
-                "category='" + category + '\'' +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", category='" + category + '\'' +
                 ", color='" + color + '\'' +
                 ", size='" + size + '\'' +
-                ", name='" + name + '\'' +
-                ", id=" + id +
                 ", quantity=" + quantity +
                 ", price=" + price +
                 '}';
