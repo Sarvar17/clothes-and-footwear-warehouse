@@ -10,3 +10,5 @@
 * Extended ProductService with service interfaces ClothesService and ProductService
 * Implemented ClothesService and FootwearService
 * Added Purchasable interface to the Service package
+* Make the project runnable
+* Commented all interfaces and classes
