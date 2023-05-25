@@ -15,7 +15,14 @@ import edu.itpu.project.service.FootwearServiceImpl;
 
 import java.util.Scanner;
 
+/**
+ * Class MainCommands.
+ */
 public class MainCommands {
+    /**
+     * Method to create controller.
+     * @return Concrete controller.
+     */
     protected static ConcreteController createConcreteController() {
         // Create instances of ClothesService, FootwearService, ClothesDao, FootwearDao, and other necessary dependencies
         ClothesDao clothesDao = new ClothesDaoImpl();
@@ -32,6 +39,11 @@ public class MainCommands {
         return new ConcreteController(clothesController, footwearController);
     }
 
+    /**
+     * Method to display products by id.
+     * @param scanner Scanner.
+     * @param controller Controller.
+     */
     protected static void displayProductsById(Scanner scanner, AbstractController controller) {
         System.out.print("Enter product ID: ");
         Long id = scanner.nextLong();
@@ -39,6 +51,11 @@ public class MainCommands {
         controller.displayProductsById(id);
     }
 
+    /**
+     * Method to display products by name.
+     * @param scanner Scanner.
+     * @param controller Controller.
+     */
     protected static void displayProductsByName(Scanner scanner, AbstractController controller) {
         System.out.print("Enter product name: ");
         scanner.nextLine();
@@ -47,10 +64,19 @@ public class MainCommands {
         controller.displayProductsByName(name);
     }
 
+    /**
+     * Method to display sorted products.
+     * @param controller controller.
+     */
     protected static void displaySortedProducts(AbstractController controller) {
         controller.displaySortedProducts();
     }
 
+    /**
+     * Method to display products which user can afford.
+     * @param scanner Scanner.
+     * @param controller Controller.
+     */
     protected static void displayPurchasableProducts(Scanner scanner, AbstractController controller) {
         System.out.print("Enter maximum price: ");
         int price = scanner.nextInt();

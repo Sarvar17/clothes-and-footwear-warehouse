@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Class to transfer data.
+ * Class to transfer data of the footwear.
  *
  * @author Sarvar Ilyasov
  */

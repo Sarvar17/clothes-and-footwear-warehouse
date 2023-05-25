@@ -3,7 +3,7 @@ package edu.itpu.project.bean;
 import java.util.Objects;
 
 /**
- * Clothes class to store information about the product.
+ * Clothes class to store information about the clothes.
  *
  * @author Sarvar Ilyasov
  */
@@ -30,18 +30,35 @@ public class Clothes extends Product implements Comparable<Clothes> {
         this.size = size;
     }
 
+    /**
+     * Getter of category.
+     * @return Category.
+     */
     public String getCategory() {
         return category;
     }
 
+    /**
+     * Getter of color.
+     * @return Color.
+     */
     public String getColor() {
         return color;
     }
 
+    /**
+     * Getter of size.
+     * @return Size.
+     */
     public String getSize() {
         return size;
     }
 
+    /**
+     * Method equals.
+     * @param o Object.
+     * @return Is equals.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -51,11 +68,19 @@ public class Clothes extends Product implements Comparable<Clothes> {
         return Objects.equals(category, clothes.category) && Objects.equals(color, clothes.color) && Objects.equals(size, clothes.size);
     }
 
+    /**
+     * HashCode.
+     * @return HashCode.
+     */
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), category, color, size);
     }
 
+    /**
+     * ToString method.
+     * @return String.
+     */
     @Override
     public String toString() {
         return "Clothes{" +
@@ -69,6 +94,11 @@ public class Clothes extends Product implements Comparable<Clothes> {
                 '}';
     }
 
+    /**
+     * CompareTo method to sort.
+     * @param o The object to be compared.
+     * @return Comparing result.
+     */
     @Override
     public int compareTo(Clothes o) {
         return this.getName().compareTo(o.getName());

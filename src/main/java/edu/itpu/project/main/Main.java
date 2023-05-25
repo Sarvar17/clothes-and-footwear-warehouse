@@ -6,7 +6,14 @@ import edu.itpu.project.view.ApplicationViewImpl;
 
 import java.util.Scanner;
 
+/**
+ * Class Main.
+ */
 public class Main extends MainCommands {
+    /**
+     * Method main where app can be launched.
+     * @param args Not used.
+     */
     public static void main(String[] args) {
         ApplicationView applicationView = new ApplicationViewImpl();
         ConcreteController concreteController = createConcreteController(); // Create an instance of ConcreteController

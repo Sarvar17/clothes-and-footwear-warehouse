@@ -10,5 +10,8 @@ import java.util.List;
  * @author Ilyasov Sarvar
  */
 public interface ProductDao<T extends Product> {
+    /**
+     * Reads the csv file, sorts the list.
+     */
     List<T> all();
 }
