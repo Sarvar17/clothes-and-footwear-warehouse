@@ -11,25 +11,21 @@ public class FootwearController implements AbstractController {
 
     @Override
     public void displayProductsById(Long id) {
-        System.out.println("Footwear:");
         footwearService.getProductsById(id).forEach(System.out::println);
     }
 
     @Override
     public void displayProductsByName(String name) {
-        System.out.println("Footwear:");
         footwearService.getProductsByName(name).forEach(System.out::println);
     }
 
     @Override
     public void displaySortedProducts() {
-        System.out.println("Footwear (sorted):");
         footwearService.getSortedProducts().forEach(System.out::println);
     }
 
     @Override
     public void displayPurchasableProducts(int price) {
-        System.out.println("Footwear (purchasable within $" + price + "):");
         footwearService.getPurchasableProducts(price).forEach(System.out::println);
     }
 }
