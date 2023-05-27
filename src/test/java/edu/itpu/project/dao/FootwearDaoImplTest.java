@@ -11,7 +11,7 @@ class FootwearDaoImplTest {
 
     @Test
     void all() {
-        FootwearDaoImpl dao = new FootwearDaoImpl("src/main/resources/footwear.csv");
+        FootwearDaoImpl dao = new FootwearDaoImpl("src/test/resources/footwear.csv");
         List<Footwear> footwearList = dao.all();
 
         // Assert that the list is not null
