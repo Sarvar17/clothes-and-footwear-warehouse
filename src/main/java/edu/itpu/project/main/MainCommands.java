@@ -46,9 +46,13 @@ public class MainCommands {
      */
     protected static void displayProductsById(Scanner scanner, AbstractController controller) {
         System.out.print("Enter product ID: ");
-        Long id = scanner.nextLong();
-
-        controller.displayProductsById(id);
+        try {
+            Long id = scanner.nextLong();
+            controller.displayProductsById(id);
+        } catch (Exception e) {
+            System.out.println("Error: Failed to display products by ID." +
+                    "\nPlease make sure you enter a valid ID.");
+        }
     }
 
     /**
@@ -78,9 +82,13 @@ public class MainCommands {
      * @param controller Controller.
      */
     protected static void displayPurchasableProducts(Scanner scanner, AbstractController controller) {
-        System.out.print("Enter maximum price: ");
-        int price = scanner.nextInt();
-
-        controller.displayPurchasableProducts(price);
+        System.out.print("Enter price which is okay for you: ");
+        try {
+            int price = scanner.nextInt();
+            controller.displayPurchasableProducts(price);
+        } catch (Exception e) {
+            System.out.println("Error: Failed to display purchasable products." +
+                    "\nPlease make sure you enter a valid price.");
+        }
     }
 }
