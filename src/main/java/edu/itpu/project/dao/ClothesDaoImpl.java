@@ -14,10 +14,16 @@ import java.util.stream.Collectors;
  * @author Sarvar Ilyasov
  */
 public class ClothesDaoImpl implements ClothesDao {
-    private final String FILE_PATH = "src/main/resources/clothes.csv";
+    private String path = "src/main/resources/clothes.csv";
 
     private List<Clothes> products;
     private final String COMMA_DELIMITER = ",";
+
+    public ClothesDaoImpl() {}
+
+    public ClothesDaoImpl(String path) {
+        this.path = path;
+    }
 
     /**
      * Reads the csv file, sorts the list.
@@ -25,7 +31,7 @@ public class ClothesDaoImpl implements ClothesDao {
     @Override
     public List<Clothes> all() {
         try {
-            products = new BufferedReader(new FileReader(FILE_PATH))
+            products = new BufferedReader(new FileReader(path))
                     .lines()
                     .skip(1)
                     .map(e -> createProduct(e.split(COMMA_DELIMITER)))
