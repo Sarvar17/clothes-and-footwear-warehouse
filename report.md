@@ -14,3 +14,4 @@
 * Commented all interfaces and classes
 * Added tests for every layer
 * Created database for only testing
+* Handled exceptions in Main and MainCommands classes
