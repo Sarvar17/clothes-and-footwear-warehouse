@@ -4,6 +4,7 @@ import edu.itpu.project.controller.ConcreteController;
 import edu.itpu.project.view.ApplicationView;
 import edu.itpu.project.view.ApplicationViewImpl;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -34,16 +35,22 @@ public class Main extends MainCommands {
             // Display menu
             applicationView.displayMenu();
 
-            System.out.print("Enter your choice: ");
-            int choice = scanner.nextInt();
+            try {
+                System.out.print("Enter your choice: ");
+                int choice = scanner.nextInt();
 
-            switch (choice) {
-                case 1 -> displayProductsById(scanner, concreteController);
-                case 2 -> displayProductsByName(scanner, concreteController);
-                case 3 -> displaySortedProducts(concreteController);
-                case 4 -> displayPurchasableProducts(scanner, concreteController);
-                case 0 -> exit = true;
-                default -> System.out.println("Invalid choice! Please try again.");
+                switch (choice) {
+                    case 1 -> displayProductsById(scanner, concreteController);
+                    case 2 -> displayProductsByName(scanner, concreteController);
+                    case 3 -> displaySortedProducts(concreteController);
+                    case 4 -> displayPurchasableProducts(scanner, concreteController);
+                    case 0 -> exit = true;
+                    default -> System.out.println("Invalid choice! Please try again.");
+                }
+
+            } catch (InputMismatchException e) {
+                System.out.println("Error: Invalid input.\nPlease enter a valid integer choice.");
+                scanner.next(); // Consume and discard the invalid input
             }
 
             System.out.println();
