@@ -101,7 +101,8 @@ public abstract class Product {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return quantity == product.quantity && price == product.price && Objects.equals(name, product.name) && id.equals(product.id);
+        return quantity == product.quantity && price == product.price && Objects.equals(name, product.name)
+                && id.equals(product.id);
     }
 
     /**
