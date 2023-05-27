@@ -63,7 +63,7 @@ public class ClothesServiceImpl implements ClothesService {
         sortProducts();
         return clothes
                 .stream()
-                .filter(e -> name.equals(e.getName()))
+                .filter(e -> e.getName().contains(name))
                 .collect(Collectors.toList());
     }
 

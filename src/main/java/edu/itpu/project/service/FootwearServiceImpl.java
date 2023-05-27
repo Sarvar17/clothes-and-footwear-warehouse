@@ -63,7 +63,7 @@ public class FootwearServiceImpl implements FootwearService {
         sortProducts();
         return footwear
                 .stream()
-                .filter(e -> name.equals(e.getName()))
+                .filter(e -> e.getName().contains(name))
                 .collect(Collectors.toList());
     }
 
