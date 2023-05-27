@@ -12,3 +12,5 @@
 * Added Purchasable interface to the Service package
 * Make the project runnable
 * Commented all interfaces and classes
+* Added tests for every layer
+* Created database for only testing
