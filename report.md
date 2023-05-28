@@ -4,7 +4,7 @@
 | #   | Stage                          | Start date | End date | Comment                                                                                                                          |
 |-----|--------------------------------|------------|----------|----------------------------------------------------------------------------------------------------------------------------------|
 | 1   | Task Clarification             | 15 May     | 16 May   |                                                                                                                                  |
-|     | Receive and analyze the task   | 15 May     | 15 May   | - Received and analyzed the task                                                                                                 |
+|     | Analyze                        | 15 May     | 15 May   | - Received and analyzed the task                                                                                                 |
 |     | Initial commit                 | 16 May     | 16 May   | - Made the first initial commit with a blank project                                                                             |
 | 2   | Software development           | 16 May     | 27 May   |                                                                                                                                  |
 |     | Created the bean package       | 16 May     | 23 May   | - Added three classes (Product, Footwear, and Clothes)                                                                           |
