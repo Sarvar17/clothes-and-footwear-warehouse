@@ -1,6 +1,8 @@
 ## Clothes and Footwear Warehouse
 #### by Sarvar Ilyasov
 
+### Open [Report](./report.md)
+
 ### User Stories
 #### The user wants to be able to:
 * Quickly find the products they need in the inventory based on various parameters
