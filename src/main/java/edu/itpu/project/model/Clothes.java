@@ -1,4 +1,4 @@
-package edu.itpu.project.bean;
+package edu.itpu.project.model;
 
 import java.util.Objects;
 

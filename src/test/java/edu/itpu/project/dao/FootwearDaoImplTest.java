@@ -1,6 +1,6 @@
 package edu.itpu.project.dao;
 
-import edu.itpu.project.bean.Footwear;
+import edu.itpu.project.model.Footwear;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

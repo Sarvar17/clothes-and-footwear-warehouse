@@ -1,4 +1,4 @@
-package edu.itpu.project.bean;
+package edu.itpu.project.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

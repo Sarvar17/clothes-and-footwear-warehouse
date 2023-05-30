@@ -1,6 +1,6 @@
 package edu.itpu.project.dao;
 
-import edu.itpu.project.bean.Product;
+import edu.itpu.project.model.Product;
 
 import java.util.List;
 

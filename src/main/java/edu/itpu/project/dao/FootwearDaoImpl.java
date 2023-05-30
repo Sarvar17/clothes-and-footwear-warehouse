@@ -1,6 +1,6 @@
 package edu.itpu.project.dao;
 
-import edu.itpu.project.bean.Footwear;
+import edu.itpu.project.model.Footwear;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  * @author Sarvar Ilyasov
  */
 public class FootwearDaoImpl implements FootwearDao {
-    private String path = "src/main/resources/footwear.csv";
+    private String path = "resources/footwear.csv";
 
     private List<Footwear> products;
     private final String COMMA_DELIMITER = ",";

@@ -1,6 +1,6 @@
 package edu.itpu.project.controller;
 
-import edu.itpu.project.bean.Footwear;
+import edu.itpu.project.model.Footwear;
 import edu.itpu.project.service.FootwearService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

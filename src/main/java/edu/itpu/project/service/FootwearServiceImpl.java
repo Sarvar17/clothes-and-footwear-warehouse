@@ -1,6 +1,6 @@
 package edu.itpu.project.service;
 
-import edu.itpu.project.bean.Footwear;
+import edu.itpu.project.model.Footwear;
 import edu.itpu.project.dao.FootwearDao;
 
 import java.util.Collections;

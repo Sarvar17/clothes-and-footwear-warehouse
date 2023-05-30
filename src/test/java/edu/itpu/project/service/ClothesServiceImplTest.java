@@ -1,6 +1,6 @@
 package edu.itpu.project.service;
 
-import edu.itpu.project.bean.Clothes;
+import edu.itpu.project.model.Clothes;
 import edu.itpu.project.dao.ClothesDao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

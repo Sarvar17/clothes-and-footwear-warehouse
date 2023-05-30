@@ -1,6 +1,6 @@
 package edu.itpu.project.dao;
 
-import edu.itpu.project.bean.Footwear;
+import edu.itpu.project.model.Footwear;
 
 /**
  * Interface to transfer data of the footwear.

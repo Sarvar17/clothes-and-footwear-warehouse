@@ -1,6 +1,6 @@
 package edu.itpu.project.service;
 
-import edu.itpu.project.bean.Product;
+import edu.itpu.project.model.Product;
 import java.util.List;
 
 /**
